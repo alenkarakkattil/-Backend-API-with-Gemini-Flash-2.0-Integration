@@ -10,9 +10,7 @@ while True:
         start = time.time()
         response = requests.post(
             "http://127.0.0.1:8000/generate/",
-            json={"prompt": prompt},
-            
-            timeout=10  #  10-second timeout
+            json={"prompt": prompt}
         )
         end = time.time()
 

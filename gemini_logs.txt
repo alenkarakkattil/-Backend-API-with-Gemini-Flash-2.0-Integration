@@ -1,0 +1,10 @@
+2025-07-14 19:20:44,428 | INFO | Prompt: hloo
+2025-07-14 19:20:44,429 | INFO | Response Time: 2.11s
+2025-07-14 19:20:44,429 | INFO | Gemini Response: Hello there! How can I help you today?
+
+
+2025-07-14 19:21:33,769 | INFO | Prompt: give a short note on ai
+2025-07-14 19:21:33,769 | INFO | Response Time: 1.28s
+2025-07-14 19:21:33,769 | INFO | Gemini Response: Artificial Intelligence (AI) is a broad field of computer science focused on creating machines capable of performing tasks that typically require human intelligence. These tasks include learning, problem-solving, decision-making, perception, and language understanding.  AI can be broadly categorized into narrow or weak AI (designed for specific tasks) and general or strong AI (hypothetical AI with human-level cognitive abilities).  AI techniques include machine learning, deep learning, natural language processing, and robotics. AI is rapidly transforming various industries and aspects of our lives, raising both opportunities and ethical considerations.
+
+

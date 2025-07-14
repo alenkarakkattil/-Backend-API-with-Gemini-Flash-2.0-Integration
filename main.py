@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 from gemini_integration import get_gemini_response
+import time
 
 app = FastAPI()
 
@@ -13,5 +14,16 @@ def read_root():
 
 @app.post("/generate/")
 def generate_response(data: PromptInput):
-    result = get_gemini_response(data.prompt)
-    return {"response": result}
+    print("Prompt:", data.prompt)
+    start = time.time()
+    
+    response = get_gemini_response(data.prompt)
+    
+    end = time.time()
+    latency = end - start
+
+    print(f"Response Time: {latency:.2f}s")
+    print("Gemini Response:", response)
+    print("-" * 50)
+
+    return {"response": response}

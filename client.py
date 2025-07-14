@@ -18,11 +18,11 @@ while True:
 
         if response.status_code == 200:
             print("\nGemini Response:\n", response.json()["response"])
-            print(f"⏱️ Response Time: {end - start:.2f} seconds\n")
+            print(f"Response Time: {end - start:.2f} seconds\n")
         else:
-            print("❌ Server error:", response.status_code, response.text)
+            print("Server error:", response.status_code, response.text)
 
     except requests.exceptions.Timeout:
         print("⚠️ Request timed out. Gemini API is taking too long.")
     except Exception as e:
-        print("❌ Unexpected error:", e)
+        print("Unexpected error:", e)

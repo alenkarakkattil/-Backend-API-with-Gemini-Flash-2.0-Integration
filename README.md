@@ -132,4 +132,4 @@ Gemini Response: Artificial Intelligence (AI) is...
 
 
 ## Demo Video
-[Watch the demo on YouTube](https://youtube.com/your-demo-link)
+[Watch the demo on YouTube]([https://youtube.com/your-demo-link](https://youtu.be/bTl-tn8onIE))

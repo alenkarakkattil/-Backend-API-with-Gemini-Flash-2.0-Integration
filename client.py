@@ -21,6 +21,6 @@ while True:
             print("Server error:", response.status_code, response.text)
 
     except requests.exceptions.Timeout:
-        print("⚠️ Request timed out. Gemini API is taking too long.")
+        print("Request timed out. Gemini API is taking too long.")
     except Exception as e:
         print("Unexpected error:", e)

@@ -1,0 +1,29 @@
+Basic Evaluation Method:-
+
+    1. Functional Testing via Swagger UI:
+        - Used http://127.0.0.1:8000/docs to test the /generate/ endpoint.
+        - Verified that input prompts return appropriate Gemini responses.
+
+    2. Response Time Logging
+	    - Used time.time() to measure API latency.
+	    - Printed the response time in seconds after every prompt.
+        Example Output:
+	Prompt: Explain machine learning
+	Response Time: 1.26s
+	Gemini Response: Machine learning is a subfield of AI...
+
+    3. Retry and Failure Handling
+	    - Integrated `tenacity` to retry API failures up to 3 times with a delay.
+	    - Handled 429 (rate-limit) errors and temporary failures gracefully.
+
+    4. Reliability Testing
+	    - Sent multiple requests to the backend using different prompts.
+	    - Verified the system's stability and response quality even during heavy usage.
+
+    5. Console Logs for Evaluation
+	    - All input prompts, output responses, and latency are logged in the terminal (Uvicorn server).
+	    - This serves as real-time evidence of LLM interaction and backend reliability.
+
+    6. Manual Testing via CLI:
+        - Ran client.py to simulate real-time user prompts.
+        - Verified Gemini replies and logged response time in console.
